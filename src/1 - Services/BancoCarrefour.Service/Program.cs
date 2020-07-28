@@ -39,7 +39,7 @@ namespace BancoCarrefour.Service
                 Console.ReadKey();
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 Environment.Exit(1);
             }

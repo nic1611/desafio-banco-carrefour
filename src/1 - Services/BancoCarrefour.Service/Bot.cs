@@ -12,11 +12,12 @@ namespace BancoCarrefour.Service
 
         public Bot(IConfiguration configuration, ITelegramAppService service)
         {
-            this.telegram = new TelegramBotClient(configuration["TelegramKeyTest"]);
+            this.telegram = new TelegramBotClient(configuration["TelegramKey"]);
             this.telegram.OnMessage += Bot_onMessage;
             this.telegram.StartReceiving();
             this.service = service;
         }
+        
         private void Bot_onMessage(object sender, Telegram.Bot.Args.MessageEventArgs e)
         {
             if (e.Message.Text == null)

@@ -14,9 +14,12 @@
 
 > dotnet build
 
-> dotnet run
+> cd '.\src\1 - Services\BancoCarrefour.Service\'
+
+> dotnet run --project .\BancoCarrefour.Service.csproj
 
 ## Tecnologias
 [.net core](https://docs.microsoft.com/pt-br/dotnet/core/) 
 [telegram bot](https://github.com/TelegramBots/telegram.bot) 
 [ms test](https://docs.microsoft.com/pt-br/dotnet/core/testing/unit-testing-with-mstest)
+[mediatR](https://github.com/jbogard/MediatR)
